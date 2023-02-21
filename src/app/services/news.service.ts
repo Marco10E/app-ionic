@@ -24,7 +24,7 @@ export class NewsService {
         apiKey  : apiKey,
         country : 'us'
       }
-    }).subscribe(clientes => console.log('array', clientes[articles]));
+    }).subscribe(clientes => console.log('array', clientes));
 
     return this.http.get<T>(`${ apiUrl }${ endponit }`, {
       params:{ 
